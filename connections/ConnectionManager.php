@@ -136,17 +136,17 @@ class ConnectionManager extends ConnectionManager_Base
 		$data["DBPath"] = "db"; //currently unused
 		$data["useServerMapPath"] = 1; //currently unused
 
-		
-		//	Don't change any of these lines manually!
-		//	Use 'Server database connections' feature on the Output screen in PHPRunner instead.
-		$data["connInfo"][0] = "localhost";
-		$data["connInfo"][1] = "root";
-		$data["connInfo"][2] = "";
-		$data["connInfo"][3] = "";
-		$data["connInfo"][4] = "taskform";
-		$data["connInfo"][5] = ""; //currently unused
-		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=;Database=taskform;OPTION=3";
+$host="localhost";
+$user="client1user";
+$pwd="w*WZX7{DHN?lb@.Qu}j-ISoE^H+Snx+j";
+$port="";
+$sys_dbname="client1";
+$data["connInfo"][0] = $host;
+$data["connInfo"][1] = $user;
+$data["connInfo"][2] = $pwd;
+$data["connInfo"][3] = $port;
+$data["connInfo"][4] = $sys_dbname;
+;
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
