@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('tf_clients_resourcecalendar',Runner.pages.constants.PAGE_ADD,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){if((proxy['eventsaved'])){window.parent.location.reload();window.parent.popup.close();}});Runner.pages.PageSettings.addPageEvent('tf_clients_resourcecalendar',Runner.pages.constants.PAGE_EDIT,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){if((proxy['eventsaved'])){window.parent.location.reload();window.parent.popup.close();}});
