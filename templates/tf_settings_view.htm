@@ -1,0 +1,485 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel tf_settings view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-vertical-field" data-fieldname="id" data-signal-error-for="id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id}">
+		
+		{BEGIN id_label}{$label tf_settings id }{END id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_value}	</div>
+
+		
+</div>
+
+
+{END id_fieldblock}
+											
+{BEGIN ndays_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ndays}  r-vertical-field" data-fieldname="ndays" data-signal-error-for="ndays{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="ndays" data-fieldname="ndays" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ndays}">
+		
+		{BEGIN ndays_label}{$label tf_settings ndays }{END ndays_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ndays_value}	</div>
+
+		
+</div>
+
+
+{END ndays_fieldblock}
+											
+{BEGIN cweekend_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cweekend}  r-vertical-field" data-fieldname="cweekend" data-signal-error-for="cweekend{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="cweekend" data-fieldname="cweekend" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cweekend}">
+		
+		{BEGIN cweekend_label}{$label tf_settings cweekend }{END cweekend_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cweekend_value}	</div>
+
+		
+</div>
+
+
+{END cweekend_fieldblock}
+											
+{BEGIN choliday_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_choliday}  r-vertical-field" data-fieldname="choliday" data-signal-error-for="choliday{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="choliday" data-fieldname="choliday" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_choliday}">
+		
+		{BEGIN choliday_label}{$label tf_settings choliday }{END choliday_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$choliday_value}	</div>
+
+		
+</div>
+
+
+{END choliday_fieldblock}
+											
+{BEGIN cday1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cday1}  r-vertical-field" data-fieldname="cday1" data-signal-error-for="cday1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="cday1" data-fieldname="cday1" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cday1}">
+		
+		{BEGIN cday1_label}{$label tf_settings cday1 }{END cday1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cday1_value}	</div>
+
+		
+</div>
+
+
+{END cday1_fieldblock}
+											
+{BEGIN cday2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cday2}  r-vertical-field" data-fieldname="cday2" data-signal-error-for="cday2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="cday2" data-fieldname="cday2" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cday2}">
+		
+		{BEGIN cday2_label}{$label tf_settings cday2 }{END cday2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cday2_value}	</div>
+
+		
+</div>
+
+
+{END cday2_fieldblock}
+											
+{BEGIN cunavailable_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cunavailable}  r-vertical-field" data-fieldname="cunavailable" data-signal-error-for="cunavailable{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="cunavailable" data-fieldname="cunavailable" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cunavailable}">
+		
+		{BEGIN cunavailable_label}{$label tf_settings cunavailable }{END cunavailable_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cunavailable_value}	</div>
+
+		
+</div>
+
+
+{END cunavailable_fieldblock}
+											
+{BEGIN cunavailabletext_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cunavailabletext}  r-vertical-field" data-fieldname="cunavailabletext" data-signal-error-for="cunavailabletext{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="cunavailabletext" data-fieldname="cunavailabletext" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cunavailabletext}">
+		
+		{BEGIN cunavailabletext_label}{$label tf_settings cunavailabletext }{END cunavailabletext_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cunavailabletext_value}	</div>
+
+		
+</div>
+
+
+{END cunavailabletext_fieldblock}
+											
+{BEGIN tooltipfields_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tooltipfields}  r-vertical-field" data-fieldname="tooltipfields" data-signal-error-for="tooltipfields{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="tooltipfields" data-fieldname="tooltipfields" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tooltipfields}">
+		
+		{BEGIN tooltipfields_label}{$label tf_settings tooltipfields }{END tooltipfields_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tooltipfields_value}	</div>
+
+		
+</div>
+
+
+{END tooltipfields_fieldblock}
+											
+{BEGIN adddays_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adddays}  r-vertical-field" data-fieldname="adddays" data-signal-error-for="adddays{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="adddays" data-fieldname="adddays" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_adddays}">
+		
+		{BEGIN adddays_label}{$label tf_settings adddays }{END adddays_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$adddays_value}	</div>
+
+		
+</div>
+
+
+{END adddays_fieldblock}
+											
+{BEGIN intName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_intName}  r-vertical-field" data-fieldname="intName" data-signal-error-for="intName{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="intName" data-fieldname="intName" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_intName}">
+		
+		{BEGIN intName_label}{$label tf_settings intName }{END intName_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$intName_value}	</div>
+
+		
+</div>
+
+
+{END intName_fieldblock}
+											
+{BEGIN intValue_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_intValue}  r-vertical-field" data-fieldname="intValue" data-signal-error-for="intValue{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="intValue" data-fieldname="intValue" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_intValue}">
+		
+		{BEGIN intValue_label}{$label tf_settings intValue }{END intValue_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$intValue_value}	</div>
+
+		
+</div>
+
+
+{END intValue_fieldblock}
+											
+{BEGIN weekends_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_weekends}  r-vertical-field" data-fieldname="weekends" data-signal-error-for="weekends{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="weekends" data-fieldname="weekends" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_weekends}">
+		
+		{BEGIN weekends_label}{$label tf_settings weekends }{END weekends_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$weekends_value}	</div>
+
+		
+</div>
+
+
+{END weekends_fieldblock}
+											
+{BEGIN minTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_minTime}  r-vertical-field" data-fieldname="minTime" data-signal-error-for="minTime{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="minTime" data-fieldname="minTime" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_minTime}">
+		
+		{BEGIN minTime_label}{$label tf_settings minTime }{END minTime_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$minTime_value}	</div>
+
+		
+</div>
+
+
+{END minTime_fieldblock}
+											
+{BEGIN maxTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_maxTime}  r-vertical-field" data-fieldname="maxTime" data-signal-error-for="maxTime{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="maxTime" data-fieldname="maxTime" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_maxTime}">
+		
+		{BEGIN maxTime_label}{$label tf_settings maxTime }{END maxTime_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$maxTime_value}	</div>
+
+		
+</div>
+
+
+{END maxTime_fieldblock}
+											
+{BEGIN clickEvent_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_clickEvent}  r-vertical-field" data-fieldname="clickEvent" data-signal-error-for="clickEvent{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="clickEvent" data-fieldname="clickEvent" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_clickEvent}">
+		
+		{BEGIN clickEvent_label}{$label tf_settings clickEvent }{END clickEvent_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$clickEvent_value}	</div>
+
+		
+</div>
+
+
+{END clickEvent_fieldblock}
+											
+{BEGIN showTitle_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_showTitle}  r-vertical-field" data-fieldname="showTitle" data-signal-error-for="showTitle{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="showTitle" data-fieldname="showTitle" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_showTitle}">
+		
+		{BEGIN showTitle_label}{$label tf_settings showTitle }{END showTitle_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$showTitle_value}	</div>
+
+		
+</div>
+
+
+{END showTitle_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Close window			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="tf_settings_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
