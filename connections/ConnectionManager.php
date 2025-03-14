@@ -138,8 +138,8 @@ class ConnectionManager extends ConnectionManager_Base
 
 //admin db		
 $adservername = "localhost";
-$adusername = "root";
-$adpassword = "";
+$adusername = "taskformadmindbuser";
+$adpassword = "JagzFDNEDxAx*5*wu5CLahn3VVRt+wjB";
 $addbname = "taskformadmin";
 
 // Create connection
