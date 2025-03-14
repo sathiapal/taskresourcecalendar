@@ -59,11 +59,11 @@ class tDAL
 	{
 		if($this->lstTables)
 			return;
-		$this->lstTables[] = array("name" => "tf_categories", "varname" => "broadspireatcrmcluster8cg8qeeg__tf_categories", "altvarname" => "tf_categories", "connId" => "broadspireatcrmcluster8cg8qeeg", "schema" => "", "connName" => "broadspire at crmcluster-8.cg8");
-		$this->lstTables[] = array("name" => "tf_clients", "varname" => "broadspireatcrmcluster8cg8qeeg__tf_clients", "altvarname" => "tf_clients", "connId" => "broadspireatcrmcluster8cg8qeeg", "schema" => "", "connName" => "broadspire at crmcluster-8.cg8");
-		$this->lstTables[] = array("name" => "tf_events", "varname" => "broadspireatcrmcluster8cg8qeeg__tf_events", "altvarname" => "tf_events", "connId" => "broadspireatcrmcluster8cg8qeeg", "schema" => "", "connName" => "broadspire at crmcluster-8.cg8");
-		$this->lstTables[] = array("name" => "tf_resources", "varname" => "broadspireatcrmcluster8cg8qeeg__tf_resources", "altvarname" => "tf_resources", "connId" => "broadspireatcrmcluster8cg8qeeg", "schema" => "", "connName" => "broadspire at crmcluster-8.cg8");
-		$this->lstTables[] = array("name" => "tf_settings", "varname" => "broadspireatcrmcluster8cg8qeeg__tf_settings", "altvarname" => "tf_settings", "connId" => "broadspireatcrmcluster8cg8qeeg", "schema" => "", "connName" => "broadspire at crmcluster-8.cg8");
+		$this->lstTables[] = array("name" => "tf_categories", "varname" => "broadspireatcrmcluster8cg8qeeg__tf_categories", "altvarname" => "tf_categories", "connId" => "broadspireatcrmcluster8cg8qeeg", "schema" => "", "connName" => "taskform at locathost");
+		$this->lstTables[] = array("name" => "tf_clients", "varname" => "broadspireatcrmcluster8cg8qeeg__tf_clients", "altvarname" => "tf_clients", "connId" => "broadspireatcrmcluster8cg8qeeg", "schema" => "", "connName" => "taskform at locathost");
+		$this->lstTables[] = array("name" => "tf_events", "varname" => "broadspireatcrmcluster8cg8qeeg__tf_events", "altvarname" => "tf_events", "connId" => "broadspireatcrmcluster8cg8qeeg", "schema" => "", "connName" => "taskform at locathost");
+		$this->lstTables[] = array("name" => "tf_resources", "varname" => "broadspireatcrmcluster8cg8qeeg__tf_resources", "altvarname" => "tf_resources", "connId" => "broadspireatcrmcluster8cg8qeeg", "schema" => "", "connName" => "taskform at locathost");
+		$this->lstTables[] = array("name" => "tf_settings", "varname" => "broadspireatcrmcluster8cg8qeeg__tf_settings", "altvarname" => "tf_settings", "connId" => "broadspireatcrmcluster8cg8qeeg", "schema" => "", "connName" => "taskform at locathost");
 	}
 
 	/**

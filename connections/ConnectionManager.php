@@ -121,11 +121,11 @@ class ConnectionManager extends ConnectionManager_Base
 		$data = array();
 		$data["dbType"] = 0;
 		$data["connId"] = "broadspireatcrmcluster8cg8qeeg";
-		$data["connName"] = "broadspire at crmcluster-8.cg8";
+		$data["connName"] = "taskform at locathost";
 		$data["connStringType"] = "mysql";
 		$data["connectionString"] = "mysql;localhost;root;;;taskform;;1"; //currently unused
 
-		$this->_connectionsIdByName["broadspire at crmcluster-8.cg8"] = "broadspireatcrmcluster8cg8qeeg";
+		$this->_connectionsIdByName["taskform at locathost"] = "broadspireatcrmcluster8cg8qeeg";
 
 		$data["connInfo"] = array();
 		$data["ODBCUID"] = "root";
@@ -136,11 +136,38 @@ class ConnectionManager extends ConnectionManager_Base
 		$data["DBPath"] = "db"; //currently unused
 		$data["useServerMapPath"] = 1; //currently unused
 
+//admin db		
+$adservername = "localhost";
+$adusername = "root";
+$adpassword = "";
+$addbname = "taskformadmin";
+
+// Create connection
+$conn = new mysqli($adservername, $adusername, $adpassword, $addbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM ad_clients where client_subdomain='client1.zjcdzjffrp-eqg35xv516xn.p.temp-site.link' limit 1";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  $row= $result->fetch_array(MYSQLI_BOTH);
+  
+} else {
+	header("Location: error.php");
+	die();
+}
+
+		
 $host="localhost";
-$user="client1user";
-$pwd="w*WZX7{DHN?lb@.Qu}j-ISoE^H+Snx+j";
+$user=$row["client_dbusername"];
+$pwd=$row["client_dbpassword"];
 $port="";
-$sys_dbname="client1" ;
+$sys_dbname=$row["client_dbname"];
+ 
 $data["connInfo"][0] = $host;
 $data["connInfo"][1] = $user;
 $data["connInfo"][2] = $pwd;
