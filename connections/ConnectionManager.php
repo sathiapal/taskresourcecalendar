@@ -149,7 +149,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM ad_clients where client_subdomain='client1.zjcdzjffrp-eqg35xv516xn.p.temp-site.link' limit 1";
+$sql = "SELECT * FROM ad_clients where client_subdomain='".$_SERVER['SERVER_NAME']."' limit 1";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
